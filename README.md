@@ -1,2 +1,2 @@
 # db_lab5_Krakovych
-db_lab5_Krakovych
+Laboratory work #5 database course
