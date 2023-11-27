@@ -48,7 +48,7 @@ with conn:
     bar_ax.set_xticklabels(level_id)
     bar_ax.set_xlabel('Рівень освіти')
     bar_ax.set_ylabel('Кількість студенток')
-    bar_ax.set_title('Кількість студенток, що писали певний рівень освіти')
+    bar_ax.set_title('Кількість студенток, що писали тест на певний рівень освіти')
 
     #кругова діаграма 
     cur.execute('DROP VIEW IF EXISTS MaleMathTest')
@@ -77,7 +77,7 @@ with conn:
     graph_ax.plot(ethnicity, count_of_students, marker='o')
     graph_ax.set_xlabel('Етнічна група')
     graph_ax.set_ylabel('Кількість студентів та студенток певної етнічної групи')
-    graph_ax.set_title('Графік залежності кількості студенів та студенток певонї етнічної групи')
+    graph_ax.set_title('Графік залежності кількості студентів та студенток певної етнічної групи')
 
     for qnt, price in zip(ethnicity, count_of_students):
         graph_ax.annotate(price, xy=(qnt, price), xytext=(7, 2), textcoords='offset points')
